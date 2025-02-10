@@ -8,10 +8,25 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
         />
-        <title>Todo List</title>
+        <title>Movie Library</title>
     </head>
     <body>
-        <main></main>
+        <main>
+            <header>
+                <h1>Movie Library</h1>
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search for a movie..."
+                />
+            </header>
+            <section id="movies" class="movies">
+                <div class="container"></div>
+            </section>
+            <footer>
+                <button id="load-more">Load More</button>
+            </footer>
+        </main>
         <script type="module" src="./src/init.js"></script>
     </body>
 </html>

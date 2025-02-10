@@ -1,5 +1,8 @@
 :root {
-    --primary-color: #e00;
+    --bg: rgb(24, 24, 24)s;
+    --primary-color: rgb(245, 197, 24);
+    --secondary-color:rgb(64, 64, 64);
+
 }
 
 *,
@@ -11,8 +14,53 @@
 }
 
 body {
-    background-color: var(--js-yellow-color);
+    background-color: var(--bg);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+header {
+    
+    padding: 1rem;
+    text-align: center;
+}
+
+.search {
+   
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.movies .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.movie-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    overflow:hidden;
+}
+.movie-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+h2 {
+    overflow: hidden;
+    text-overflow: hidden;
+    
 }
 
