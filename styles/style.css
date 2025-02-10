@@ -43,8 +43,7 @@ header {
 .movie-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: end;
+    justify-content: center;
 
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -61,6 +60,6 @@ header {
 h2 {
     overflow: hidden;
     text-overflow: hidden;
-    
+    padding: 10%;
 }
 
